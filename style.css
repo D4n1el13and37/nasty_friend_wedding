@@ -17,6 +17,11 @@
   box-sizing: border-box;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --blue: #9db0cc;
   --color1: #566a88;
@@ -49,7 +54,8 @@ body {
 
 .princess {
   font-family: 'Princess Diana', cursive, sans-serif;
-  font-size: 36px;
+  font-size: 60px;
+  font-weight: 400;
   line-height: 27px;
   letter-spacing: -1px;
   color: var(--color1);
@@ -105,14 +111,30 @@ body {
   color: var(--black);
 }
 
+.content {
+  position: relative;
+}
+
+.greeting__cards_paper {
+  position: absolute;
+  z-index: -1;
+  bottom: 224px;
+  width: 100%;
+  left: 0;
+}
+
 .section__greeting_content {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 12px;
+  gap: 24px;
+  margin-bottom: 24px;
 }
 
-.greeting__title .princess {
+.greeting__title .princess,
+.greeting__title_span {
+  position: relative;
+  top: -12px;
   color: var(--wheat);
 }
 
@@ -123,27 +145,22 @@ body {
 }
 
 .greeting__cards {
-  /* display: flex; */
-  height: 263px;
-  display: grid;
-  grid-template-columns: repeat(
-    4,
-    1fr
-  ); /* 4 колонки для точного позиционирования */
-  grid-template-rows: repeat(4, 1fr); /* 4 строки */
-  gap: 0;
+  position: relative;
+  display: flex;
+  height: 171px;
 }
 
-.greeting__cards :first-child {
-  grid-column: 1 / 3;
-  grid-row: 3 / 5;
+.first_card,
+.second_card {
+  position: absolute;
 }
 
-.greeting__cards :last-child {
-  grid-column: 3 / 5; /* Занимает колонки 3-4 */
-  grid-row: 1 / 3; /* Занимает строки 1-2 (верхние) */
-  align-self: start; /* Прижимаем к верху своей области */
-  justify-self: end;
+.second_card {
+  right: 0;
+}
+
+.first_card {
+  bottom: -83px;
 }
 
 .greeting__cards .card {
@@ -178,11 +195,15 @@ body {
 }
 
 /* DATE */
+.section__date {
+  padding-top: 80px;
+}
+
 .date__title {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 12px;
+  gap: 24px;
 
   margin-bottom: 54px;
 
@@ -226,7 +247,13 @@ body {
   gap: 24px;
 
   .section__title {
+    position: relative;
     text-align: start;
+
+    .princess {
+      position: relative;
+      top: -12px;
+    }
   }
 }
 
@@ -272,21 +299,34 @@ body {
 img {
   max-width: 100%;
 }
+
 /* TIMING */
 .section__timing {
+  position: relative;
   color: var(--wheat);
-  background-image: url('./assets/layout.png');
+  background-image: url('./assets/list_paper.png');
   background-repeat: no-repeat;
-  background-size: 190%;
+  background-size: 1350px;
   background-position: center center;
 }
 
 .section__timing .section__title {
-  color: var(--wheat);
+  position: relative;
+
   margin-bottom: 16px;
+
+  display: flex;
+  flex-direction: column;
+
+  color: var(--wheat);
 }
 
-.section__timing .section__title .princess{
+.timing__title_span {
+  position: relative;
+  top: -12px;
+}
+
+.section__timing .section__title .princess {
   color: var(--wheat);
 }
 
@@ -316,6 +356,10 @@ img {
   vertical-align: middle;
 }
 
+.princess.item__time {
+  color: var(--wheat);
+}
+
 .h3 {
   font-weight: 700;
   font-size: 20px;
@@ -338,6 +382,20 @@ img {
 }
 
 /* DRESS CODE */
+.section__dress-code .section__title .princess {
+  position: relative;
+  top: -12px;
+}
+
+.section__dress-code .text {
+  position: relative;
+}
+
+.section__dress-code_icon {
+  position: absolute;
+  right: 2rem;
+}
+
 .section__dress-code,
 .section__confirmation,
 .section__detail {
@@ -401,9 +459,50 @@ img {
 }
 
 .footer {
-  padding: 28px 0 0;
+  position: relative;
+  padding: 28px 0;
+
+  .princess {
+    font-size: 36px;
+  }
 
   .text {
     text-align: start;
+  }
+}
+
+.footer__background {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.footer__timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  color: var(--wheat);
+}
+
+.timer {
+  font-size: 20px;
+  font-family: 'Oranienbaum';
+  display: flex;
+  gap: 4px;
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 20px;
+
+    width: 90px;
+
+    h4 {
+      font-size: 16px;
+    }
   }
 }

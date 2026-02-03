@@ -21,36 +21,47 @@
       <!-- GREETING -->
       <section class="section section__greeting">
         <div class="container">
-          <div class="section__greeting_content">
-            <h1 class="greeting__title">
-              НАШЕ ОСОБЕННОЕ <strong class="princess">приглашение</strong> ДЛЯ
-              ВАС!
-            </h1>
-            <p class="text">
-              Когда два пути сливаются в один -рождается история
-            </p>
-          </div>
-          <div class="greeting__cards">
-            <div class="card">
-              <span class="name"> Антон </span>
-              <img
-                class="card_icon"
-                src="./assets/icons/arrow.svg"
-                alt="icon"
-              />
-              <img class="image" src="./assets/anton.jpg" alt="anton image" />
+          <div class="content">
+            <div class="section__greeting_content">
+              <h1 class="greeting__title">
+                <span>НАШЕ ОСОБЕННОЕ</span>
+                <strong class="princess">приглашение</strong>
+                <span class="greeting__title_span"> ДЛЯ ВАС! </span>
+              </h1>
+              <p class="text">
+                Когда два пути сливаются в один -рождается история
+              </p>
             </div>
-            <div class="card">
-              <span class="name"> Яна </span>
-              <img
-                class="card_icon"
-                src="./assets/icons/arrow_reverse.svg"
-                alt="icon"
-              />
-              <img class="image" src="./assets/yana.jpg" alt="anton image" />
+
+            <div class="greeting__cards">
+              <div class="first_card card">
+                <span class="name"> Антон </span>
+                <img
+                  class="card_icon"
+                  src="./assets/icons/arrow.svg"
+                  alt="icon"
+                />
+                <img class="image" src="./assets/anton.jpg" alt="anton image" />
+              </div>
+              <div class="second_card card">
+                <span class="name"> Яна </span>
+                <img
+                  class="card_icon"
+                  src="./assets/icons/arrow_reverse.svg"
+                  alt="icon"
+                />
+                <img class="image" src="./assets/yana.jpg" alt="anton image" />
+              </div>
             </div>
           </div>
         </div>
+      </section>
+      <section>
+        <img
+          class="greeting__cards_paper"
+          src="./assets/header_papper.png"
+          alt=""
+        />
       </section>
       <!-- DATE -->
       <section class="section section__date">
@@ -72,7 +83,7 @@
         </div>
       </section>
       <!-- LOCATION -->
-      <section>
+      <section class="section">
         <div class="container">
           <div class="location__wrapper">
             <div class="location__text_title">
@@ -92,7 +103,12 @@
                     Адрес: Нижний Новгород,<br />улица Красная Слобода, д.9
                   </p>
                 </div>
-                <a href="" target="_blank" class="link">Построить маршрут</a>
+                <a
+                  href="https://yandex.ru/maps/org/osobnyak_1857/65169290511/?ll=44.036078%2C56.329520&z=12.38"
+                  target="_blank"
+                  class="link"
+                  >Построить маршрут</a
+                >
               </div>
             </div>
           </div>
@@ -102,13 +118,15 @@
       <section class="section section__timing">
         <div class="container">
           <h2 class="section__title">
-            ПРОГРАММА<br />
-            <span class="princess">нашего</span>
-            ДНЯ
+            <span> ПРОГРАММА </span>
+            <span class="timing__title_span">
+              <span class="princess">нашего</span>
+              ДНЯ
+            </span>
           </h2>
           <ul class="timing__list">
             <li class="timing__item">
-              <h3 class="item__time">16:00</h3>
+              <h3 class="princess item__time">16:00</h3>
               <div class="item__content">
                 <h4 class="h3 item__content_title">СБОР ГОСТЕЙ</h4>
                 <p class="caption">
@@ -117,7 +135,7 @@
               </div>
             </li>
             <li class="timing__item">
-              <h3 class="item__time">17:00</h3>
+              <h3 class="princess item__time">17:00</h3>
               <div class="item__content">
                 <h4 class="h3 item__content_title">ЦЕРЕМОНИЯ</h4>
                 <p class="caption">
@@ -126,7 +144,7 @@
               </div>
             </li>
             <li class="timing__item">
-              <h3 class="item__time">18:00</h3>
+              <h3 class="princess item__time">18:00</h3>
               <div class="item__content">
                 <h4 class="h3 item__content_title">БАНКЕТ</h4>
                 <p class="caption">
@@ -135,7 +153,7 @@
               </div>
             </li>
             <li class="timing__item">
-              <h3 class="item__time">23:00</h3>
+              <h3 class="princess item__time">23:00</h3>
               <div class="item__content">
                 <h4 class="h3 item__content_title">ФИНАЛ</h4>
                 <p class="caption">(но воспоминания<br />останутся навсегда)</p>
@@ -153,7 +171,12 @@
             <span class="princess"> элегантный casual </span>
           </h2>
           <p class="text">
-            Мы будем признательны, если вы поддержите цветовую гамму нашего
+            <img
+              class="section__dress-code_icon"
+              src="./assets/icons/dress_code.svg"
+              alt=""
+            />
+            Мы будем признательны, если<br />вы поддержите цветовую гамму<br />нашего
             праздника в своих нарядах
           </p>
           <!-- THINK ABOUT LIST? -->
@@ -205,19 +228,32 @@
           <div class="confirmation_content">
             <p class="text">
               Пожалуйста, подтвердите свое присутствие на нашем празднике до 01
-              апреля 2026 года, нажав на кнопку ниже и заполнив форму
+              апреля 2026 года,<br />
+              нажав на кнопку ниже и заполнив форму
             </p>
-            <a href="" class="link">Заполнить анкету</a>
+            <a
+              target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSevY5ZZEOmj6PzXNDJzVYta30ARCcK7mbzgS5dKN5q2WNCQdQ/viewform  "
+              class="link"
+              >Заполнить анкету</a
+            >
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
+      <img class="footer__background" src="./assets/footer_paper.png" alt="" />
       <div class="container">
-        <h2 class="princess">С любовью и теплыми воспоминаниями</h2>
-        <img src="./assets/goodbye.jpg" alt="" />
-        <ul class="timer"></ul>
+        <div class="footer__content">
+          <h2 class="princess">С любовью и теплыми воспоминаниями</h2>
+          <img class="footer__image" src="./assets/goodbye.jpg" alt="" />
+          <div class="footer__timer">
+            <h3>ДО ТОРЖЕСТВА ОСТАЛОСЬ:</h3>
+            <ul class="timer"></ul>
+          </div>
+        </div>
       </div>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
