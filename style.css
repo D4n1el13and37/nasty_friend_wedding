@@ -471,6 +471,21 @@ img {
   }
 }
 
+.footer__content {
+  display: flex;
+  flex-direction: column;
+
+  .princess {
+    margin-bottom: 24px;
+  }
+
+  .footer__image {
+    align-self: flex-end;
+    width: 193px;
+    margin-bottom: 84px;
+  }
+}
+
 .footer__background {
   position: absolute;
   bottom: 0;
@@ -487,7 +502,6 @@ img {
 
 .timer {
   font-size: 20px;
-  font-family: 'Oranienbaum';
   display: flex;
   gap: 4px;
 
