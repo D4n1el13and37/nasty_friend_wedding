@@ -107,6 +107,7 @@ body {
 
 .greeting__title,
 .section__title {
+  position: relative;
   font-weight: 700;
   font-size: 32px;
   line-height: 28px;
@@ -399,6 +400,15 @@ img {
 .section__dress-code_icon {
   position: absolute;
   right: 2rem;
+}
+
+.footer__content .section__title_span {
+  top: -20px;
+}
+
+.section__title_span{
+  position: relative;
+  top: -12px;
 }
 
 .section__dress-code,
