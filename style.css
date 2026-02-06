@@ -474,6 +474,8 @@ img {
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
   position: relative;
   padding: 28px 0;
 
