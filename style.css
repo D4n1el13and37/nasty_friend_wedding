@@ -267,7 +267,6 @@ body {
 
 .mb6 {
   margin-bottom: 6px;
-  
 }
 
 .date__content {
@@ -293,10 +292,10 @@ body {
 }
 
 .location__text_title {
+  position: relative;
   max-width: 322px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
 
   .section__title {
     position: relative;
@@ -307,6 +306,14 @@ body {
       top: -24px;
     }
   }
+}
+
+.location_icon {
+  width: 81px;
+  height: 100px;
+  position: absolute;
+  bottom: -65px;
+  right: -25px;
 }
 
 .location__text_content {
