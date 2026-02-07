@@ -22,6 +22,20 @@ ul {
   padding: 0;
 }
 
+.header,
+.main,
+.footer {
+  width: 100%;
+  max-width: 440px;
+}
+
+.app {
+  background-color: var(--wheat);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 :root {
   --blue: #9db0cc;
   --color1: #566a88;
@@ -128,6 +142,25 @@ body {
   left: 0;
 }
 
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.section__greeting::after {
+  content: '';
+  position: absolute;
+  max-width: 440px;
+  /* bottom: 210px; */
+  top: 310px;
+  width: 100%;
+  height: 260px;
+  background-image: url(./assets/header_papper.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
 .section__greeting_content {
   display: flex;
   align-items: center;
@@ -139,7 +172,7 @@ body {
 .greeting__title .princess,
 .greeting__title_span {
   position: relative;
-  top: -12px;
+  top: -20px;
   color: var(--wheat);
 }
 
@@ -406,7 +439,7 @@ img {
   top: -20px;
 }
 
-.section__title_span{
+.section__title_span {
   position: relative;
   top: -12px;
 }
